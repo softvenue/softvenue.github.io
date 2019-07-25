@@ -6,7 +6,10 @@ var x = setInterval(function(){
   hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
   minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
   seconds = Math.floor((distance % (1000 * 60)) / 1000),
-  timeString  = days + " day :: " + hours + " hours :: " + minutes + " minutes :: " + seconds + " seconds";
+  timeString  = days + " day :: ";
+  timeString += hours + " hours :: ";
+  timeString += minutes + " minutes :: "; 
+  timeString += seconds + " seconds";
   console.log(timeString);
   document.querySelector("#count-down").innerHTML = timeString;
   if(distance < 0){
