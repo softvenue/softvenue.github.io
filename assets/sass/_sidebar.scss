@@ -1,0 +1,43 @@
+.single-page-container{
+    .btn-project-link{
+        background-color: #0e0e70;
+        width: 100%;
+        color: #fff;
+        border-radius: 2px;
+        &:hover{
+            background-color: #f0b708;
+            color: #0e0e70;
+        }
+    }
+}
+.single-card{
+    box-shadow: $shadow-1;  
+    background-image: #fff;
+    border-radius: 0;
+    .tags{
+        margin-bottom: 5px;
+        a{
+            font-size: 14px;
+            background-image: $darkPurple;
+            padding: 5px 8px;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 2px;
+            transition: 0.2s all;
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+    }
+    .btn-lg.btn-project-link{
+        background-color: #005bea;
+        width: 100%;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 2px;
+        &:hover{
+            background-color: #f0b708;
+            color: #0e0e70;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.more-projects{
+    display: block;
+    position: relative;
+    min-height: 520px;
+    height: auto !important;
+    background: {
+        image: url('../img/working.svg');
+        size: 650px 370px;
+        repeat: no-repeat;
+        position: 5% 130%;
+    }
+    p{
+        color: #363636;
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .btn{
+        border-radius: 1px;
+        border: none;
+    }
+    .col-sm-4{
+        @media(min-width: $break-sm){    
+            padding-left: 0;
+        }
+    }
+    .more-card{
+        background-color: #fff;
+        color: #4a4a4a;
+        border-radius: 1px;
+        box-shadow: $shadow-1;
+        cursor: pointer;
+    }
+    &.bg-semi-light{
+        background-color: #f7f7f7;
+    }
+    .tags{
+        a{
+            background-image: $darkPurple;
+            font-size: 12px;
+            color: #fff;
+            text-decoration: none;
+            padding: 2px 5px;
+            border-radius: 2px;
+        }
+    }
+}

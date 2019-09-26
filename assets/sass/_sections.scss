@@ -1,0 +1,98 @@
+// Intro section - home page
+
+.services{
+    background-color: #fff; 
+    .outline-row{
+        span{    
+            font-family: 'mainFont', sans-serif;
+        }
+        .outline-small{
+            font-size: 35px;
+        }
+        .outline-medium{
+            font-size: 50px;
+            line-height: 90%;
+        }
+        .outline-large{
+            font-size: 100px;
+            line-height: 90%;
+        }
+        .outline-small,
+        .outline-medium,
+        .outline-large{
+            @media screen and (max-width: $break-md){
+                font-size: 35px;
+                line-height: 110%;
+            }
+        }
+        .rainbow-hr{
+            height: 1px;
+            border: none;
+            background: $rainbow !important;
+            max-width: 300px;
+            margin: 0;
+        }
+    }
+    h2{
+        font-size: 38px;
+        line-height: 2.875rem;
+        letter-spacing: -2px;
+        margin-bottom: 1rem;
+        color: #111;
+    }
+    p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 1rem;
+    }
+    .btn-section{
+        border-color: #212b36;
+        color: #212b36;
+        transition: background-color .3s,color .3s,border-color .3s;
+        &:hover{
+            background-color: #212b36;
+            color: #fff;
+        }
+    }
+    .img-android{
+        height: 400px;
+    }
+}
+.solutions{
+    z-index: 2;
+    background-color: #f7f7f7;
+    display: block;
+    position: relative;
+    .single-card{
+        display: block;
+        width: 100%;
+        background-color: #fff;
+        .card-title{
+            color: #0e0e70;
+        }
+        .btn-project-link{
+            background-color: #0e0e70;
+        }
+    }
+    p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 1rem;
+   }
+   &:before{
+        content: '';  
+        background: transparent url("../img/wave.svg") top center no-repeat;
+        display: block;
+        height: 151px;
+        position: absolute;
+        top: -10px;
+        left: -50%;
+        width: 150%;
+        overflow: hidden;
+    }
+}
+.text-project-link{
+    color: #f0b708;
+}

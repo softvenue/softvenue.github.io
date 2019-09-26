@@ -1,0 +1,40 @@
+.modal{
+    .modal-content{
+        border: 0;
+        border-radius: 0;
+        .modal-body{
+            .modal-circle{
+                position: relative;
+                display: block;
+                width: 60px;
+                height: 60px;
+                border-radius: 100%;
+                vertical-align: 50%;
+                &.bg-facebook{
+                    background-color: $facebook;
+                }
+                &.bg-twitter{
+                    background-color: $twitter;
+                }
+                &.bg-reddit{
+                    background-color: $reddit;
+                }
+                &.bg-tumblr{
+                    background-color: $tumblr;
+                }
+                &.bg-pinterest{
+                    background-color: $pinterest;
+                }
+                &.bg-linkedin{
+                    background-color: $linkedin;
+                }
+                a{
+                    color: #fff;
+                    span{
+                        transform: translateY(42%);
+                    }
+                }
+            }
+        }
+    }
+}

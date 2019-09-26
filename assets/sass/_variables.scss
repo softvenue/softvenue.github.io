@@ -1,0 +1,32 @@
+/* variables */
+$headings: h;
+$break-sm: 576px;
+$break-md: 768px;
+$break-lg: 992px;
+$break-xl: 1200px;
+// gradients
+$blue: linear-gradient(to top, #00c6fb 0%, #005bea 100%) !important;
+$pink: linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+$green: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+$nightBlue: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+$brightNightBlue: linear-gradient(180deg,#000026 0%,#4052dd 100%) !important;
+$purple: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+$darkPurple: linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%);
+$white: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+$rainbow : linear-gradient(to right, #ff3535 0%,#ffb22d 19%,#f7df00 37%,#26ff6c 56%,#268bff 76%,#8b3cff 100%);
+$singleBlue: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+//colors
+$facebook: #3b5998;
+$twitter: #1da1f2;
+$reddit: #ff4500;
+$tumblr: #35465c;
+$pinterest: #bd081c;
+$linkedin: #0077b5;
+$mix: #fd8235;
+// shadows
+$shadow-0: none;
+$shadow-1: 0 2px 3px hsla(0,0%,4%,.1),0 0 0 1px hsla(0,0%,4%,.1);
+$shadow-2: 0 4px 5px 0 rgba(0,0,0,0.14),0 1px 10px 0 rgba(0,0,0,0.12),0 2px 4px -1px rgba(0,0,0,0.3);
+$shadow-3: 0 6px 10px 0 rgba(0,0,0,0.14),0 1px 18px 0 rgba(0,0,0,0.12),0 3px 5px -1px rgba(0,0,0,0.3);
+$shadow-4: 0 8px 10px 1px rgba(0,0,0,0.14),0 3px 14px 2px rgba(0,0,0,0.12),0 5px 5px -3px rgba(0,0,0,0.3);
+$shadow-5: 0 16px 24px 2px rgba(0,0,0,0.14),0 6px 30px 5px rgba(0,0,0,0.12),0 8px 10px -5px rgba(0,0,0,0.3);

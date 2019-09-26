@@ -1,0 +1,82 @@
+.quote{
+    position: relative;
+    display: block;
+    height: 50vh;
+    background: {
+        image: url('../img/pr01.jpg');
+        size: cover;
+    }
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    .quote-container{
+        display: block;
+        position: relative;
+        background: {
+            image: $white;
+        }
+        border-radius: 1px;
+        top: 10vh;
+        box-shadow: $shadow-1;
+    }
+    h3{
+        font: {
+            family: 'Roboto Mono', monospace;
+            size: 22px;
+        }
+        color: #000;
+        font-weight: 100;
+    }
+    p{
+        color: #999;
+        &:before{
+            content: "\2014\00A0";
+        }
+    }
+}
+.footer{
+    @media(max-width: 768px){
+        position: relative;
+        display: block;
+    }
+    &.footer-grey{
+        background-image: $white;
+    }
+    .container{
+        .title{
+            font-family: "mainFont", sasns-serif;
+            font-size: 22px;
+            line-height: 28px;
+            letter-spacing: -1px;
+            margin-bottom: .8rem;
+        }   
+        ul{
+            padding-left: 0;
+            li{
+                list-style-type: none;
+                margin-bottom: 8px;
+                a{
+                    font-size: 15px;
+                    color: #212b36;
+                    line-height: 25px;
+                    text-decoration: none;
+                    &:hover{
+                        color: #2196f6;
+                    }
+                }
+            }
+        }
+        .footer-logo{
+            width: 100px;
+        }
+    }
+    .bottom-menu-title{
+        display: inline-block;
+    }
+    .horizontal-menu{
+        display: inline-block;
+        li{
+            display: inline-block;
+            padding: 5px 15px;
+        }
+    }
+}

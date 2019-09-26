@@ -1,0 +1,21 @@
+.is-page{
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+.legal-container{
+    font-family: "Open Sans", sans-serif;
+    @for $i from 1 through 6{
+        #{$headings}#{$i}{
+            font-family: "Source Sans Pro", sans-serif;
+            font-weight: 600;
+            line-height: 200%;
+            color: #000026;
+        }    
+    }
+}
+.contact-form{
+    box-shadow: $shadow-1;
+    border-radius: 2px;
+    .budget {
+        width: 100%;
+    }
+}

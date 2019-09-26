@@ -1,0 +1,46 @@
+// Reset BS4 styles if needed
+body{
+    font-family: "Source Sans Pro", sans-serif;
+}
+@for $i from 1 through 6{
+    #{$headings}#{$i}{
+        font-family: "mainFont", sans-serif;
+        letter-spacing: -2px;
+        margin-bottom: 0;
+    }    
+}
+.card{
+    border: none;
+    box-shadow: $shadow-4;
+    cursor: pointer;
+    text-align: left;
+    // background-blend-mode: luminosity;
+}
+.bg-is-image{
+    blockquote{
+        border-radius: 4px;
+    }
+    &:hover{
+        blockquote{
+            visibility: visible !important;
+            background: $purple;
+        }
+    }
+}
+.card.shadow-0{
+    box-shadow: none;
+}
+@media (min-width: 55em) {
+    .card-columns {
+        -webkit-column-count:3;
+        -moz-column-count:3;
+        column-count:3;
+    }
+}
+@media (max-width: 55em) {
+    .card-columns {
+        -webkit-column-count:1;
+        -moz-column-count:1;
+        column-count:1;
+    }
+}

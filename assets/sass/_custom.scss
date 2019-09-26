@@ -1,0 +1,33 @@
+.gradient-link{
+    &:before{
+        position: relative;
+        content: '←\00a0';
+        top: -1px;
+    }
+    &:hover{
+        text-decoration: none;
+        &:before{
+            left: -4px;  
+        }   
+    }
+    .blue{
+        background: linear-gradient(230deg, #00c6fb 0%, #005bea 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+.bg-primary-gradient{
+    background: $blue;
+}
+.single-page-container{
+    .img-fluid{
+        width: 100%;
+        border-radius: 4px;
+        box-shadow: $shadow-1;
+    }
+    p{
+        font-weight: 300;
+        color: #333;
+        line-height: 2rem;
+    }
+}

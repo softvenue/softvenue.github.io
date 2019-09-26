@@ -1,0 +1,23 @@
+.is-single{
+    background-image: $singleBlue;
+}
+.single-page-container{
+    .img-fluid{
+        width: 100%;
+        border-radius: 0;
+        box-shadow: $shadow-1;
+    }
+    p{
+        font-weight: 300;
+        color: #333;
+        line-height: 2rem;
+    }
+    .other-orjects{
+        .other-project-card{
+            position: relative;
+            background-clip: border-box;
+            border: 1px solid rgba(0,0,0,.125);
+            border-radius: .25rem;
+        }
+    }
+}

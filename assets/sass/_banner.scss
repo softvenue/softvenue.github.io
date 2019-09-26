@@ -1,0 +1,109 @@
+
+.banner{
+    position: relative;
+    display: block;
+    width: 100%;    
+    max-width: 100%;
+    padding: 5px 0;
+    left: 0;
+    &.is-main{
+        .banner-content{
+            text-align: left;
+            height: calc(100% - 60px);
+            .main-message{    
+                font-size: 40px;
+            }
+        }
+    }
+    &:before{
+        background: transparent url("../img/wave.svg") top center no-repeat;
+        background-size: auto;
+        -webkit-background-size: 3000px 151px;
+        background-size: 3000px 151px;
+        left: 0;
+        content: '';
+        display: block;
+        height: 151px;
+        position: absolute;
+        bottom: -10px;
+        width: 100%;
+        transform: rotateX(-180deg);
+        @media screen and (max-width: $break-md) {
+            display: none;
+        }
+    }
+    .banner-content{
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 65%;
+        text-align: center;
+        bottom: 0;
+        transform: translate(50% 50%);
+        .main-message{
+            display: block;
+            // transform: translate(0, 50%);    
+            font-size: 50px;
+            font-family: "mainFont", sans-serif;
+            line-height: 50px;  
+            letter-spacing: -2px;
+            color: #fff;
+            z-index: 2;
+            font-weight: 700;
+            text-shadow: 0 4px 5px rgba(0,0,0,0.14) ;
+            .tag-title{
+                font-family: "Rubik", sans-serif;
+                font-weight: 300;
+            }
+        }
+        .main-description{
+            font-size: 22px;
+            font-weight: 300;
+            line-height: 40px;
+        }
+        .btn-outline-light{
+            border-radius: 2px;
+            background-color: #f0b708;
+            border: none;
+            color: #0e0e70;
+            &:hover{
+                box-shadow: $shadow-1; 
+                background-color: #fdc92b;
+                // span{
+                //     background-image: $brightNightBlue;
+                //     -webkit-background-clip: text;
+                //     -webkit-text-fill-color: transparent;
+                // }
+            }
+        }
+    }
+}
+@media screen and (max-width: $break-sm) {
+    .banner {
+        .banner-content{
+            .main-message {
+                font-size: 10vw;
+            }          
+        }
+    }
+  }
+  // linear-gradient(180deg,#000026 0%,#4052dd 100%) !important
+  // legal banner
+  .legal-banner{
+    position: relative;
+    display: block;
+    width: 100%;    
+    max-width: 100%;
+    height: 350px !important;
+    padding-bottom: 5px;
+    background-color: #0e0e70;
+    .navbar{
+        background-color: #fff !important;
+        .navbar-brand{
+            color: #333;
+        }
+        .nav-link{
+            color: #333;
+        }
+    }
+}
