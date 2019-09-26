@@ -1,0 +1,26 @@
+{% for item in site.data.nav %}
+{% if item.sub_items == 'yes' %}
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-11"
+    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children dropdown menu-item-11 nav-item">
+    <a title="{{ item.title }}" href=".{{ item.link }}" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false" class="nav-link dropdown-toggle" id="menu-item-dropdown-11">{{ item.title }}</a>
+    <ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-11" role="menu">
+        {% for sub_item in item.all_item %}
+        <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-14"
+            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-14 nav-item">
+            <a title="{{ sub_item.title }}" href="/category/{{ sub_item.link }}/"
+                class="nav-link">{{ sub_item.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</li>
+{% endfor %}
+{% for item in site.data.nav %}
+{% if item.sub_items != 'yes' %}
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-20"
+    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20 nav-item">
+    <a title="{{ item.title }}" href=".{{ item.link }}/" class="nav-link">{{ item.title }}</a>
+</li>
+{% endif %}
+{% endfor %}
