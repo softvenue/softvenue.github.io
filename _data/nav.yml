@@ -1,0 +1,22 @@
+---
+- link: /achievements
+  title: achievements
+- all_item:
+    - link: /solution/web
+      title: web
+    - link: /solution/mobile
+      title: Mobile
+    - link: /solution/desktop/
+      title: Desktop
+  link: /Solution/
+  title: Solution
+  sub_items: "yes"
+- link: /e-marketing/
+  title: e-Marketing
+- link: /formations/
+  title: Formations
+- link: /about
+  title: "Who are we?"
+- link: /contact-us/
+  title: Contact
+- link: /events
