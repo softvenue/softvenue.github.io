@@ -2,7 +2,7 @@
 - link: /achievements
   title: achievements
 - all_item:
-    - link: /solution/web
+    - link: /solutions/web
       title: web
     - link: /solution/mobile
       title: Mobile
