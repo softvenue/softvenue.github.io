@@ -2,22 +2,22 @@
 - link: /achievements
   title: achievements
 - all_item:
-    - link: /solutions/web
+    - link: solutions/web
       title: web
-    - link: /solution/mobile
+    - link: solution/mobile
       title: Mobile
-    - link: /solutions/desktop/
+    - link: solutions/desktop
       title: Desktop
   link: /Solutions/
   title: Solutions
   sub_items: "yes"
-- link: /e-marketing/
+- link: /e-marketing
   title: e-Marketing
-- link: /training/
+- link: /training
   title: Training
 - link: /our-dna
   title: "Our DNA"
-- link: /contact-us/
+- link: /contact-us
   title: Contact
 - link: /events
   title: Events
